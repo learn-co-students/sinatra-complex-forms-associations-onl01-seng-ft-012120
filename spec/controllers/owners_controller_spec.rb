@@ -1,17 +1,17 @@
-# require 'spec_helper'
+require 'spec_helper'
 
-# describe "Owners Controller" do
-#   describe "new action" do 
+describe "Owners Controller" do
+  describe "new action" do 
 
-#     it "can visit '/owners/new'" do
-#       get '/owners/new'
-#       expect(last_response.status).to eq(200)
-#     end
+    it "can visit '/owners/new'" do
+      get '/owners/new'
+      expect(last_response.status).to eq(200)
+    end
 
-#     # it "'/owners/new' loads form to create a new owner" do
-#       visit '/owners/new'
-#       expect(page).to have_field('owner[name]')
-#     end
+    it "'/owners/new' loads form to create a new owner" do
+      visit '/owners/new'
+      expect(page).to have_field('owner[name]')
+    end
 
 #     it "'/owners/new' form has a checkbox for existing pets" do
 #       @pet1 = Pet.create(:name => "Bessie")
@@ -62,7 +62,7 @@
 #       @owner = Owner.last
 #       expect(page.current_path).to eq("/owners/#{@owner.id}")
 #     end
-#   end
+  end
 
 #   describe "edit action" do 
 #     before(:each) do
@@ -107,4 +107,4 @@
 
 #   end
 
-# end
+end
